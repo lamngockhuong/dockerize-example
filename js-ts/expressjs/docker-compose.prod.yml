@@ -1,0 +1,10 @@
+services:
+  expressjs:
+    build:
+      context: .
+    ports:
+      - 3000:3000
+      - 9229:9229
+    environment:
+      - DEBUG=expressjs:*
+    command: npm start
