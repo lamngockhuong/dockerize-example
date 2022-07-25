@@ -7,4 +7,6 @@ services:
       - 9229:9229
     environment:
       - DEBUG=expressjs:*
+    volumes:
+      - ./:/app
     command: npm start

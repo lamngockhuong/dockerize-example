@@ -1,23 +1,25 @@
 ## I. On-premises
-Install dependencies:
++ Install dependencies:
 ```
 $ npm install
 ```
 
-On MacOS or Linux, run the app with this command:
++ On MacOS or Linux, run the app with this command:
 ```
 $ DEBUG=expressjs:* npm start
 ```
 
-On Windows Command Prompt, use this command:
++ On Windows Command Prompt, use this command:
 ```
 > set DEBUG=expressjs:* & npm start
 ```
 
-On Windows PowerShell, use this command:
++ On Windows PowerShell, use this command:
 ```
 PS> $env:DEBUG='expressjs:*'; npm start
 ```
+
+To test that the application is working properly, access to http://localhost:3000
 ## II. Docker - Docker compose
 ### Docker
 Build expressjs image
@@ -48,12 +50,7 @@ dockerize-example/expressjs:v1
 Run the application:
 ```
 $ cd js-ts/expressjs/
-$ docker compose up
-```
-
-Additional:
-```
-$ docker compose -f docker-compose.prod.yml up
+$ docker compose up -f docker-compose.dev.yml --build
 ```
 
 Stop:
