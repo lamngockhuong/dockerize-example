@@ -50,7 +50,7 @@ dockerize-example/expressjs:v1
 Run the application:
 ```
 $ cd js-ts/expressjs/
-$ docker compose up -f docker-compose.dev.yml --build
+$ docker compose -f docker-compose.dev.yml up --build
 ```
 
 Stop:
