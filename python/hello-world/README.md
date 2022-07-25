@@ -61,5 +61,5 @@ $ docker compose -f docker-compose.dev.yml up --build
 + Stop:
 ```
 $ cd python/hello-world/
-$ docker compose stop
+$ docker compose -f docker-compose.dev.yml stop
 ```
