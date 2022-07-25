@@ -18,7 +18,7 @@ On Windows PowerShell, use this command:
 ```
 PS> $env:DEBUG='expressjs:*'; npm start
 ```
-## Docker - Docker compose
+## II. Docker - Docker compose
 ### Docker
 Build expressjs image
 ```
